@@ -20,8 +20,8 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
     axios.get('./effect.json').then((res) => {
-      // const groups = res.data;
-      var groups = [];
+      var groups = res.data;
+      // var groups = [];
       if(groups.length > 0) {
         initFoamTree(groups);
       } else {
