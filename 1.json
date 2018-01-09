@@ -1,0 +1,87 @@
+[{
+    "name": "代码结构",
+    "type": "chord",
+    "sort": "ascending",
+    "sortSub": "descending",
+    "ribbonType": false,
+    "radius": "60%",
+    "itemStyle": {
+        "normal": {
+            "label": {
+                "rotate": true
+            }
+        }
+    },
+    "minRadius": 7,
+    "maxRadius": 20,
+    "nodes": [{
+        "name": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\arrayUniq.js"
+    }, {
+        "name": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\constant.js"
+    }, {
+        "name": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\deleteExt.js"
+    }, {
+        "name": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\formatAbsolute.js"
+    }, {
+        "name": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\getNodes.js"
+    }, {
+        "name": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\index.js"
+    }, {
+        "name": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\queryAllFileName.js"
+    }, {
+        "name": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\querydepend.js"
+    }, {
+        "name": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\regexpPathname.js"
+    }],
+    "links": [{
+        "source": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\deleteExt.js",
+        "target": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\constant.js",
+        "weight": 1,
+        "name": "依赖"
+    }, {
+        "source": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\formatAbsolute.js",
+        "target": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\regexpPathname.js",
+        "weight": 1,
+        "name": "依赖"
+    }, {
+        "source": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\getNodes.js",
+        "target": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\regexpPathname.js",
+        "weight": 1,
+        "name": "依赖"
+    }, {
+        "source": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\index.js",
+        "target": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\queryAllFileName.js",
+        "weight": 1,
+        "name": "依赖"
+    }, {
+        "source": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\index.js",
+        "target": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\querydepend.js",
+        "weight": 1,
+        "name": "依赖"
+    }, {
+        "source": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\index.js",
+        "target": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\formatAbsolute.js",
+        "weight": 1,
+        "name": "依赖"
+    }, {
+        "source": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\index.js",
+        "target": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\arrayUniq.js",
+        "weight": 1,
+        "name": "依赖"
+    }, {
+        "source": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\index.js",
+        "target": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\getNodes.js",
+        "weight": 1,
+        "name": "依赖"
+    }, {
+        "source": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\queryAllFileName.js",
+        "target": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\deleteExt.js",
+        "weight": 1,
+        "name": "依赖"
+    }, {
+        "source": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\queryAllFileName.js",
+        "target": "C:\\Users\\huayifeng\\Downloads\\JS-structure-master\\JS-structure-master\\test\\constant.js",
+        "weight": 1,
+        "name": "依赖"
+    }]
+}]
