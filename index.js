@@ -1,11 +1,18 @@
-const express = require('express');
-const app = express();
-const router = express.Router();
-router.get('/', function (req, res, next) {
-  req.url = './index.html';
-  next();
-});
-app.use(router);
+const path = require('path');
+const argv = require('optimist').argv;
+const cssControl = require('./lib/index');
+// 遍历目录
+let root = process.cwd();
 
-app.use(express.static('./dist'));
-const server = app.listen(3000)
+
+if(argv.h) {
+    
+}
+
+if(argv.p) {
+    root = path.resolve(__dirname, argv.p);
+}
+
+
+
+cssControl(root);

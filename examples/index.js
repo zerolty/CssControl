@@ -1,5 +1,11 @@
-const a = require('./src/commponent/demo.js');
-require('./src/css/1.css');
-require('../lib/css-control');
+const express = require('express');
+const app = express();
+const router = express.Router();
+router.get('/', function (req, res, next) {
+  req.url = './index.html';
+  next();
+});
+app.use(router);
 
-console.log(a);
+app.use(express.static('./dist'));
+const server = app.listen(3000)
