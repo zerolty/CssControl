@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "optimist": "^0.6.1"
   },
   "devDependencies": {
     "node-sass": "^4.7.2"
