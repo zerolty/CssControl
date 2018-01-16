@@ -20,3 +20,13 @@ Options:
   -h  --html[unrequired] type of multifile
   -p  --path[unrequired] the path of your dir
 ```
+
+# Example
+```
+$ node .\lib\diff\
+
+{ 
+  '\html\index1.html': [ { name: '\\css\\1.css', attr: [Object] } ],
+  '\html\index2.html': [ { name: '\\css\\3.css', attr: [Object] } ] 
+}
+```
