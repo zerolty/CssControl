@@ -29,4 +29,36 @@ $ node .\lib\diff\
   '\html\index1.html': [ { name: '\\css\\1.css', attr: [Object] } ],
   '\html\index2.html': [ { name: '\\css\\3.css', attr: [Object] } ] 
 }
+export!
+```
+
+# Export 
+
+```
+./lib/data/export.json
+
+[{
+    "label": "\\html\\index1.html",
+    "groups": [{
+        "label": "\\css\\1.css",
+        "groups": [{
+            "label": ".content"
+        }, {
+            "label": ".inner-content"
+        }, {
+            "label": ".inner-button"
+        }, {
+            "label": ".inner-span"
+        }]
+    }]
+}, {
+    "label": "\\html\\index2.html",
+    "groups": [{
+        "label": "\\css\\3.css",
+        "groups": [{
+            "label": ".inner-span"
+        }]
+    }]
+}
+
 ```
