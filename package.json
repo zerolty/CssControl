@@ -4,7 +4,7 @@
   "description": "a tool for css csscontrol ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "author": "huayifeng",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "optimist": "^0.6.1"
   },
   "devDependencies": {
+    "jest": "^22.1.1",
     "node-sass": "^4.7.2"
   }
 }
