@@ -1,26 +1,43 @@
 diff --git a/index.js b/index.js
-index 7ddbd20..b4b6859 100644
+index 7ddbd20..f1c764a 100644
 --- a/index.js
 +++ b/index.js
-@@ -24,4 +24,18 @@ if(argv.p) {
+@@ -24,4 +24,4 @@ if(argv.p) {
  }
  
  
 -cssControl(root, type);
 \ No newline at end of file
 +cssControl(root, type);
-+
-+
-+(async () => {
-+	const res = await axios.get('https://api.github.com/repos/zerolty/CssControl/commits/ea38dd322b5a5ebab4f92f82cfd3b464fb8ffb15',{
-+		headers: {
-+			// "Accept": "application/vnd.github.diff"
-+		}
-+	})
-+	const patchs = res.data.files.map(c => c.patch)
-+	// const patchs_formated = patchs.map(item => )
-+	// console.log(patch)
-+	console.log(patchs[0])
-+	console.log(patchs.length)
-+})()
+diff --git a/lib/auto-git/temp/diff.txt b/lib/auto-git/temp/diff.txt
+index acffdcb..e69de29 100644
+--- a/lib/auto-git/temp/diff.txt
++++ b/lib/auto-git/temp/diff.txt
+@@ -1,26 +0,0 @@
+-diff --git a/index.js b/index.js
+-index 7ddbd20..b4b6859 100644
+---- a/index.js
+-+++ b/index.js
+-@@ -24,4 +24,18 @@ if(argv.p) {
+- }
+- 
+- 
+--cssControl(root, type);
+-\ No newline at end of file
+-+cssControl(root, type);
+-+
+-+
+-+(async () => {
+-+	const res = await axios.get('https://api.github.com/repos/zerolty/CssControl/commits/ea38dd322b5a5ebab4f92f82cfd3b464fb8ffb15',{
+-+		headers: {
+-+			// "Accept": "application/vnd.github.diff"
+-+		}
+-+	})
+-+	const patchs = res.data.files.map(c => c.patch)
+-+	// const patchs_formated = patchs.map(item => )
+-+	// console.log(patch)
+-+	console.log(patchs[0])
+-+	console.log(patchs.length)
+-+})()
+-\ No newline at end of file
 \ No newline at end of file
