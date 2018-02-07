@@ -1,2 +1,2 @@
 #! /bin/bash
-git diff > ./temp/diff.txt
+git diff --no-prefix -U1000 > ./temp/diff.txt
