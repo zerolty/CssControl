@@ -1,1 +1,1 @@
-{"1.scss":" .content {     &.style {         width: 100px;         height: 100px;// -        background: #ddd;// +    }// +    .content {// +        width: 100px;     } }  .cc {     width: 100px; }\\ No newline at end of file"}
+{"1.scss":" .content {     &.style {         width: 100px;// -        height: 100px;     }     .content {         width: 100px;     }// +    .inner {// +        width: 100px;// +    } }  .cc {     width: 100px; }\\ No newline at end of file"}
