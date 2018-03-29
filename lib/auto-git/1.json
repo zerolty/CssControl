@@ -1,1 +1,1 @@
-{"1.scss":" .content {\r     &.style {\r         width: 100px;\rcontent: '-        height: 100px;';\r     }\r     .content {\r         width: 100px;\r     }\rcontent: '+    .inner {';\rcontent: '+        width: 100px;';\rcontent: '+    }';\r }\r \r .cc {\r     width: 100px;\r }\r"}
+{"1.scss":" .content {\r     &.style {\r         width: 100px;\rcontent: '-        height: 100px;';\r     }\r     .content {\r         width: 100px;\r     }\rcontent: '+    .dd {';\rcontent: '+        width: 100%;';\rcontent: '+    }';\r }\r \r .cc {\r     width: 100px;\r }\r"}
