@@ -1,3 +1,1 @@
-{
-    "1.scss": " .content {     &.style {         width: 100px;         height: 100px;         background: #ddd;     }+}  .cc {     width: 100px; }\\ No newline at end of file"
-}
+{"1.scss":" .content {     &.style {         width: 100px;-        height: 100px;     }     .content {         width: 100px;     }+    .dd {+        width: 100%;+    } }  .cc {     width: 100px; }"}

@@ -1,8 +1,12 @@
 .content {
     &.style {
         width: 100px;
-        height: 100px;
-        background: #ddd;
+    }
+    .content {
+        width: 100px;
+    }
+    .dd {
+        width: 100%;
     }
 }
 
