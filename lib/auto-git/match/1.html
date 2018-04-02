@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  const obj = {
+    ".content": {
+        "attr": [],
+        "child": {
+            "&.style": {
+                "attr": [" height: 100px;"],
+                "child": {},
+                "isChange": ""
+            },
+            ".content": {
+                "attr": [],
+                "child": {},
+                "isChange": ""
+            },
+            ".dd": {
+                "attr": ["width: 100%;", ""],
+                "child": {},
+                "isChange": "+"
+            }
+        },
+        "isChange": ""
+    },
+    ".cc": {
+        "attr": [],
+        "child": {},
+        "isChange": ""
+    }
+};
+
+const stylesList = {}
+function attrMerge(obj, root) {
+    Object.keys(obj).map((item) => {
+        // debugger;
+        if(obj[item].isChange !== '') {
+            stylesList[`${root} ${item}`] = obj[item].attr;
+        }
+        if(Object.getOwnPropertyNames(obj[item].child).length !== 0) {
+            attrMerge(obj[item].child, `${root} ${item}`)
+        }
+        // if(obj[item].isChange === '' && Object.getOwnPropertyNames(obj[item].child).length === 0) {
+        //     stylesList[root] = obj[item].attr;
+        // }
+    })
+}
+attrMerge(obj, '');
+console.log(JSON.stringify(stylesList));
+</script>
+</body>
+</html>
