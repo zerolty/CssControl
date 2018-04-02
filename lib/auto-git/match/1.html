@@ -1,9 +1,14 @@
-const match = require('./index');
-const str = " .content {     &.style {         width: 100px;-        height: 100px;     }     .content {         width: 100px;     }+    .dd {+        width: 100%;+    } }  .cc {     width: 100px; }";
-
-console.log(JSON.stringify(match(str)))
-
-const obj = {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  const obj = {
     ".content": {
         "attr": [],
         "child": {
@@ -49,3 +54,6 @@ function attrMerge(obj, root) {
 }
 attrMerge(obj, '');
 console.log(JSON.stringify(stylesList));
+</script>
+</body>
+</html>
