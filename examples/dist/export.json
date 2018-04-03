@@ -1,15 +1,19 @@
 [{
     "label": "\\html\\index1.html",
     "groups": [{
-        "label": "\\css\\1.css",
+        "label": "1.scss",
         "groups": [{
-            "label": ".content"
+            "label": " .content &.style",
+            "groups": [{
+                "label": "- height: 100px;"
+            }]
         }, {
-            "label": ".inner-content"
-        }, {
-            "label": ".inner-button"
-        }, {
-            "label": ".inner-span"
+            "label": " .content .dd",
+            "groups": [{
+                "label": "+width: 100%;"
+            }, {
+                "label": "+"
+            }]
         }]
     }]
 }, {
