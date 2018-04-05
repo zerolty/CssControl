@@ -7,7 +7,9 @@ const argv = require('optimist')
         .alias('s', 'single')
         .describe('s', 'use type of single')
         .argv;
-const cssControl = require('./lib/index');
+// const cssControl = require('./lib/index');
+const combind = require('./lib/combine/index');
+
 // 遍历目录
 let root = process.cwd();
 // 遍历类型
@@ -24,4 +26,4 @@ if(argv.p) {
 }
 
 
-cssControl(root, type);
+combind(root, type);
