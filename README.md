@@ -23,42 +23,25 @@ Options:
 
 # Example
 ```
-$ node .\lib\diff\
-
-{ 
-  '\html\index1.html': [ { name: '\\css\\1.css', attr: [Object] } ],
-  '\html\index2.html': [ { name: '\\css\\3.css', attr: [Object] } ] 
-}
-export!
-```
-
-# Export 
-
-```
-./lib/data/export.json
+$ node index.js -s -p ./test-webpack
 
 [{
-    "label": "\\html\\index1.html",
-    "groups": [{
-        "label": "\\css\\1.css",
-        "groups": [{
-            "label": ".content"
-        }, {
-            "label": ".inner-content"
-        }, {
-            "label": ".inner-button"
-        }, {
-            "label": ".inner-span"
-        }]
-    }]
-}, {
-    "label": "\\html\\index2.html",
-    "groups": [{
-        "label": "\\css\\3.css",
-        "groups": [{
-            "label": ".inner-span"
-        }]
-    }]
-}
-
+	"label": "index.js",
+	"groups": [{
+		"label": "src/css/1.scss",
+		"groups": [{
+			"label": " .content &.style",
+			"groups": [{
+				"label": "- height: 100px;"
+			}]
+		}, {
+			"label": " .content .dd",
+			"groups": [{
+				"label": "+width: 100%;"
+			}, {
+				"label": "+"
+			}]
+		}]
+	}]
+}]
 ```
