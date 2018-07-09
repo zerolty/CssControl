@@ -22,26 +22,37 @@ Options:
 ```
 
 # Example
+
+change 1.scss
+```javascript
+.content {
+    &.style {
+        width: 100px;
+    }
+    .content {
+        width: 100px;
+    }
+    .dd {
+        width: 100%;
+	}
+	.a {
+        width: 100px
+    }
+}
+
+.cc {
+    width: 100px;
+}
+
+```
+
 ```
 $ node index.js -s -p ./test-webpack
 
-[{
-	"label": "index.js",
-	"groups": [{
-		"label": "src/css/1.scss",
-		"groups": [{
-			"label": " .content &.style",
-			"groups": [{
-				"label": "- height: 100px;"
-			}]
-		}, {
-			"label": " .content .dd",
-			"groups": [{
-				"label": "+width: 100%;"
-			}, {
-				"label": "+"
-			}]
-		}]
-	}]
-}]
+$ cd examples
+
+$ node index.js
+
+open localhost:3000 on the browers
+
 ```
