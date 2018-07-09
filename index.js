@@ -25,5 +25,4 @@ if(argv.p) {
     root = path.resolve(__dirname, argv.p);
 }
 
-
-combind(root, type);
+combind(root, type, argv.p);
